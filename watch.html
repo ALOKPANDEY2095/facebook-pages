@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" type="image/x-icon">
+    <title>Facebook</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--navbar-->
+   <div class="watch"> 
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"/>
+            <div class="search_input">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Search Facebook"/>
+            </div>
+        </div>
+        <div class="nav-middle">
+            
+            <a href="index.html"><div class="material-button">
+                <div class="navbar_options"><span class="material-icons">home</span></div>
+                
+            </div></a>
+            
+            <a href="watch.html"><div class="navbar_options  active" onclick="display('sectionwatchSection')"><span class="material-icons">subscriptions</span></div></a>
+            <div class="navbar_options" onclick="display('sectionmarketPlace')"><span class="material-icons">storefront</span></div>
+            <a href="Group.html"><div class="navbar_options" onclick="display('sectiongroupSection')"><span class="material-icons">supervised_user_circle</span></div></a>
+        </div>
+        <div class="nav-right">
+            <div class="user_info">
+                <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                <h4>Virat</h4>
+            </div>
+            <div class="nav-right-material-icon" onclick="addMenu()"><span class="material-icons">add</span></div>
+            <div class="add-menu" id="addMenu">
+                <h1>Menu</h1>
+                <div class="card-container-menu">
+                    <div class="first-card-container">
+                        <div class="search_input">
+                            <span class="material-icons">search</span>
+                            <input type="text" placeholder="Search Facebook"/>
+                        </div>
+                        <h1>Social</h1>
+                        <div class="icon-dec-container">
+                            <div class="sidebar_row">
+                                <span style="font-size:x-larger" class="material-icons">label_important</span>
+                                
+                            </div>
+                            <div class="icon-heading-dec">
+                                <h1>Events</h1>
+                                <p>Organise and findevents and other things to do online and nearby</p>
+                            </div>
+                        </div>
+                        <div class="icon-dec-container">
+                            <div class="sidebar_row">
+                                <span style="font-size:x-larger" class="material-icons">label_important</span>
+                               
+                            </div>
+                            <div class="icon-heading-dec">
+                                <h1>Events</h1>
+                                <p>Organise and findevents and other things to do online and nearby</p>
+                            </div>
+                        </div>
+                        <div class="icon-dec-container">
+                            <div style="font-size:x-larger" class="sidebar_row">
+                                <span class="material-icons">label_important</span>
+                                
+                            </div>
+                            <div style="font-size:x-larger" class="icon-heading-dec">
+                                <h1>Events</h1>
+                                <p>Organise and findevents and other things to do online and nearby</p>
+                            </div>
+                        </div>
+                        <div class="icon-dec-container">
+                            <div style="font-size:x-larger" class="sidebar_row">
+                                <span class="material-icons">label_important</span>
+                                
+                            </div>
+                            <div class="icon-heading-dec">
+                                <h1>Events</h1>
+                                <p>Organise and findevents and other things to do online and nearby</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-class-container">
+                        <h1>Create</h1>
+                        <div class="create-container">
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <hr/>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                            <div class="sidebar_row">
+                                <span class="material-icons">people</span>
+                                <h4>Friends</h4>
+                            </div>
+                         </div>       
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right-material-icon" onclick="messangeMenu()"><span class="material-icons">forum</span></div>
+            <div class="notification-container" id="messangeMenu">
+                <div class="notification-header">
+                    <h1>Messanger</h1>
+                    <div class="messanger-icon">
+                    <span class="material-icons">more_horiz</span>
+                    <span class="material-icons">video_call</span>
+                    <span class="material-icons">open_with</span>
+                    <span class="material-icons">edit_note</span></div>
+                </div>
+                <div class="search_input">
+                    <span class="material-icons">search</span>
+                    <input type="text" placeholder="Search Facebook"/>
+                </div>
+                
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                   <div class="info-message">
+                       <h1>ABC XYZ</h1>
+                       <p>hi <span style="color:blue">. now</span></p>
+                   </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>    
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <div class="info-message">
+                        <h1>ABC XYZ</h1>
+                        <p>hi <span style="color:blue">. now</span></p>
+                    </div>  
+                </div>
+    
+            </div>
+            <div class="nav-right-material-icon" onclick="notificationMenu()"><span class="material-icons">notifications_active</span></div>
+            <div class="notification-container" id="notificationMenu">
+                <div class="notification-header">
+                    <h1>Notification</h1>
+                    <span class="material-icons">more_horiz</span>
+                </div>
+                <div class="button-icon">
+                    <h1 class="button-read">All</h1>
+                    <h1 class="button-unread">Unread</h1>
+                </div>
+                <div class="see-container"><h1>Earlier</h1></div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+                <div class="notification-msg">
+                    <div class="user_info">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                       
+                    </div>
+                    <p>Abc posted in group</p>  
+                </div>
+    
+            </div>
+            
+            <div class="nav-right-material-icon" onclick="expandMenu()"><span class="material-icons">expand_more</span></div>
+        </div>
+        
+        <div class="expand-menu" id="expandMenu">
+            <div class="expand-menu-inner">
+                <div class="user_info">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/playerheadshot/bcci/1000x1280/164.png" class="user_img"/>
+                    <div class="info-container">
+                        <h4>Virat</h4>
+                        <a href="#">See your profile</a>
+                    </div>
+                    
+                </div>
+                <hr/>
+                <div class="user_info">
+                    <div class="nav-right-material-icon"><span class="material-icons">
+                        feedback
+                        </span></div>
+                    <div class="info-container">
+                        <h4>Give Feedback</h4>
+                        <a href="#">Help us to improve the new design</a>
+                   </div>
+                </div>
+                <hr/>
+                <div class="expand-links">
+                    <div class="nav-right-material-icon"><span class="material-icons">
+                        settings
+                        </span></div>
+                    <a href="#">Settings & Privacy <span class="material-icons">arrow_forward_ios</span></a>
+                </div>
+                <div class="expand-links">
+                    <div class="nav-right-material-icon"><span class="material-icons">help</span></div>
+                    <a href="#">Help and Support <span class="material-icons">arrow_forward_ios</span></a>
+                </div>
+                <div class="expand-links">
+                    <div class="nav-right-material-icon"><span class="material-icons">nightlight</span></div>
+                    <a href="#">Display and Accessibility <span class="material-icons">arrow_forward_ios</span></a>
+                </div>
+                <div class="expand-links">
+                    <div class="nav-right-material-icon"><span class="material-icons">logout</span></div>
+                    <a href="#">Logout <span class="material-icons">arrow_forward_ios</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Advance</a>
+                    <a href="#">More</a>
+                </div>
+            </div>
+            
+        </div>
+     
+    </nav>
+    <!--navbar ends-->
+<!--main-watch-section-->
+
+        <!--watch-side-bar-->
+        <div class="watch-main-body">
+            <div class="watch-side-container">
+                <div class="watch-search">
+                        <div class="watch-container-heading">
+                            <h1>Watch</h1>
+                            <div class="expand-links">
+                                <div class="nav-right-material-icon"><span class="material-icons">
+                                    settings
+                                    </span></div>
+                        </div>
+                    </div>
+                    <div class="search_input">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search videos"/>
+                    </div>
+                    <hr/>
+                </div>
+            <div class="watch-icons-position">
+            <div class="watch-icons-container">
+                <span class="material-icons">
+                    ondemand_video
+                    </span>
+                <h4>Home</h4>
+            </div>
+            <div class="watch-icons-container">
+                <span class="material-icons">
+                    video_camera_back
+                    </span>
+                <h4>Live</h4>
+            </div>
+            <div class="watch-icons-container">
+                <span class="material-icons">
+                    movie_creation
+                    </span>
+                <h4>Shows</h4>
+            </div>
+            <div class="watch-icons-container">
+                <span class="material-icons">
+                    turned_in
+                    </span>
+                <h4>Saved videos</h4>
+            </div>
+            <hr/>
+            <div class="watchlist">
+                <h6>Your WatchList</h6>
+                <p style="color:blue">Manage</p>
+            </div>
+            <div class="user_info">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img"/>
+                <h6>Rohit</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_NR6GqsZmX6-_i4s1TkGyvUnHMTEf3etvQ&usqp=CAU" class="user_img"/>
+                <h6>Messi</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGRFT-1oU4FBZS8BatKVmF2Vbfjwa9hui9zA&usqp=CAUg" class="user_img"/>
+                <h6>David</h6>
+            </div>
+            <div class="user_info">
+                <img src="data:image/jpeg;base64,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" class="user_img"/>
+                <h6>Dhoni</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://manunitedcore.com/wp-content/uploads/2021/09/Ronaldo-Profile.png" class="user_img"/>
+                <h6>Ronaldo</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img"/>
+                <h6>Rohit</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_NR6GqsZmX6-_i4s1TkGyvUnHMTEf3etvQ&usqp=CAU" class="user_img"/>
+                <h6>Messi</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGRFT-1oU4FBZS8BatKVmF2Vbfjwa9hui9zA&usqp=CAUg" class="user_img"/>
+                <h6>David</h6>
+            </div>
+            <div class="user_info">
+                <img src="data:image/jpeg;base64,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" class="user_img"/>
+                <h6>Dhoni</h6>
+            </div>
+            <div class="user_info">
+                <img src="https://manunitedcore.com/wp-content/uploads/2021/09/Ronaldo-Profile.png" class="user_img"/>
+                <h6>Ronaldo</h6>
+            </div>
+        </div>
+
+            </div>
+
+        <!--end-watch-side-bar-->
+        <!--wat-feed-->
+            <div class="watch-feed">
+                <div class="post">
+                    <div class="post_top_container">
+                    <div class="post_top">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img post_user"/>
+                        <div class="post_top_info">
+                            <h3>Rohit</h3>
+                            <p>14 Feb at 20:20</p>
+                        </div>
+                        </div>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                        <div class="post_bottom">
+                            <p>Wildlife video</p>
+                        </div>
+                        <div class="post_img">
+                            <video width="100%" controls>
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                        <div class="like-container">
+                            <div class="icon-container">
+                                <span style="Color:blue"class="material-icons">
+                                    thumb_up_off_alt
+                                    </span>
+                                <span style="Color:red"class="material-icons">
+                                        favorite_border
+                                        </span>
+                                <h6>3K</h6>
+                            </div>
+                            <div class="comment-number">
+                                <h6>10 Comments 12 Shares</h6>
+                            </div>
+                        </div>
+                        <div class="post_options">
+                            <div class="post_option">
+                            <span class="material-icons">thumb_up</span>
+                            <p>Like</p>
+                            </div>
+                            <div class="post_option" onclick="commentSectionSecond()">
+                            <span class="material-icons">chat_bubble_outline</span>
+                            <p>Comment</p>
+                            </div>
+                            
+                        <div class="post_option" onclick="shareSecond()">
+                            <span class="material-icons">near_me</span>
+                            <p>Share</p>
+                            </div>
+                            
+                        
+                        </div>
+                        <!--share-container-->
+                        <div class="share-second" id="shareSecond">
+                            <div class="sharecontainer">
+                                <div class="share-option">
+                                    <span class="material-icons">feed</span>
+                                    <h4>Share to news feed</h4>
+                                </div>
+                                
+                                <div class="share-option">
+                                    <span class="material-icons">add_circle_outline</span>
+                                    <h4>Share to your story</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">groups</span>
+                                    <h4>Share to group</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">read_more</span>
+                                    <h4>More options</h4>
+                                </div>
+                            
+                            </div>
+                            </div>
+                        <!--comment section-->
+                        <div class="comment_section" id="commentSectionSecond">
+                            <div class="comment_section_top message_container_top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <form>
+                                    <input type="text" class="message_container_input" placeholder="Write a comment..."/>
+                                </form>
+                            </div>
+                            <div class="comment_section_container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <div class="comment-section-post">
+                                    <h4>PQR WXY</h4>
+                                    <p>Peafowl is national bird</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="post">
+                    <div class="post_top_container">
+                    <div class="post_top">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img post_user"/>
+                        <div class="post_top_info">
+                            <h3>Rohit</h3>
+                            <p>14 Feb at 20:20</p>
+                        </div>
+                        </div>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                        <div class="post_bottom">
+                            <p>Wildlife video</p>
+                        </div>
+                        <div class="post_img">
+                            <video width="100%" controls>
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                        <div class="like-container">
+                            <div class="icon-container">
+                                <span style="Color:blue"class="material-icons">
+                                    thumb_up_off_alt
+                                    </span>
+                                <span style="Color:red"class="material-icons">
+                                        favorite_border
+                                        </span>
+                                <h6>3K</h6>
+                            </div>
+                            <div class="comment-number">
+                                <h6>10 Comments 12 Shares</h6>
+                            </div>
+                        </div>
+                        <div class="post_options">
+                            <div class="post_option">
+                            <span class="material-icons">thumb_up</span>
+                            <p>Like</p>
+                            </div>
+                            <div class="post_option" onclick="commentSectionSecond()">
+                            <span class="material-icons">chat_bubble_outline</span>
+                            <p>Comment</p>
+                            </div>
+                            
+                        <div class="post_option" onclick="shareSecond()">
+                            <span class="material-icons">near_me</span>
+                            <p>Share</p>
+                            </div>
+                            
+                        
+                        </div>
+                        <!--share-container-->
+                        <div class="share-second" id="shareSecond">
+                            <div class="sharecontainer">
+                                <div class="share-option">
+                                    <span class="material-icons">feed</span>
+                                    <h4>Share to news feed</h4>
+                                </div>
+                                
+                                <div class="share-option">
+                                    <span class="material-icons">add_circle_outline</span>
+                                    <h4>Share to your story</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">groups</span>
+                                    <h4>Share to group</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">read_more</span>
+                                    <h4>More options</h4>
+                                </div>
+                            
+                            </div>
+                            </div>
+                        <!--comment section-->
+                        <div class="comment_section" id="commentSectionSecond">
+                            <div class="comment_section_top message_container_top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <form>
+                                    <input type="text" class="message_container_input" placeholder="Write a comment..."/>
+                                </form>
+                            </div>
+                            <div class="comment_section_container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <div class="comment-section-post">
+                                    <h4>PQR WXY</h4>
+                                    <p>Peafowl is national bird</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="post">
+                    <div class="post_top_container">
+                    <div class="post_top">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img post_user"/>
+                        <div class="post_top_info">
+                            <h3>Rohit</h3>
+                            <p>14 Feb at 20:20</p>
+                        </div>
+                        </div>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                        <div class="post_bottom">
+                            <p>Wildlife video</p>
+                        </div>
+                        <div class="post_img">
+                            <video width="100%" controls>
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                        <div class="like-container">
+                            <div class="icon-container">
+                                <span style="Color:blue"class="material-icons">
+                                    thumb_up_off_alt
+                                    </span>
+                                <span style="Color:red"class="material-icons">
+                                        favorite_border
+                                        </span>
+                                <h6>3K</h6>
+                            </div>
+                            <div class="comment-number">
+                                <h6>10 Comments 12 Shares</h6>
+                            </div>
+                        </div>
+                        <div class="post_options">
+                            <div class="post_option">
+                            <span class="material-icons">thumb_up</span>
+                            <p>Like</p>
+                            </div>
+                            <div class="post_option" onclick="commentSectionSecond()">
+                            <span class="material-icons">chat_bubble_outline</span>
+                            <p>Comment</p>
+                            </div>
+                            
+                        <div class="post_option" onclick="shareSecond()">
+                            <span class="material-icons">near_me</span>
+                            <p>Share</p>
+                            </div>
+                            
+                        
+                        </div>
+                        <!--share-container-->
+                        <div class="share-second" id="shareSecond">
+                            <div class="sharecontainer">
+                                <div class="share-option">
+                                    <span class="material-icons">feed</span>
+                                    <h4>Share to news feed</h4>
+                                </div>
+                                
+                                <div class="share-option">
+                                    <span class="material-icons">add_circle_outline</span>
+                                    <h4>Share to your story</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">groups</span>
+                                    <h4>Share to group</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">read_more</span>
+                                    <h4>More options</h4>
+                                </div>
+                            
+                            </div>
+                            </div>
+                        <!--comment section-->
+                        <div class="comment_section" id="commentSectionSecond">
+                            <div class="comment_section_top message_container_top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <form>
+                                    <input type="text" class="message_container_input" placeholder="Write a comment..."/>
+                                </form>
+                            </div>
+                            <div class="comment_section_container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <div class="comment-section-post">
+                                    <h4>PQR WXY</h4>
+                                    <p>Peafowl is national bird</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="post">
+                    <div class="post_top_container">
+                    <div class="post_top">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img post_user"/>
+                        <div class="post_top_info">
+                            <h3>Rohit</h3>
+                            <p>14 Feb at 20:20</p>
+                        </div>
+                        </div>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                        <div class="post_bottom">
+                            <p>Wildlife video</p>
+                        </div>
+                        <div class="post_img">
+                            <video width="100%" controls>
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                        <div class="like-container">
+                            <div class="icon-container">
+                                <span style="Color:blue"class="material-icons">
+                                    thumb_up_off_alt
+                                    </span>
+                                <span style="Color:red"class="material-icons">
+                                        favorite_border
+                                        </span>
+                                <h6>3K</h6>
+                            </div>
+                            <div class="comment-number">
+                                <h6>10 Comments 12 Shares</h6>
+                            </div>
+                        </div>
+                        <div class="post_options">
+                            <div class="post_option">
+                            <span class="material-icons">thumb_up</span>
+                            <p>Like</p>
+                            </div>
+                            <div class="post_option" onclick="commentSectionSecond()">
+                            <span class="material-icons">chat_bubble_outline</span>
+                            <p>Comment</p>
+                            </div>
+                            
+                        <div class="post_option" onclick="shareSecond()">
+                            <span class="material-icons">near_me</span>
+                            <p>Share</p>
+                            </div>
+                            
+                        
+                        </div>
+                        <!--share-container-->
+                        <div class="share-second" id="shareSecond">
+                            <div class="sharecontainer">
+                                <div class="share-option">
+                                    <span class="material-icons">feed</span>
+                                    <h4>Share to news feed</h4>
+                                </div>
+                                
+                                <div class="share-option">
+                                    <span class="material-icons">add_circle_outline</span>
+                                    <h4>Share to your story</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">groups</span>
+                                    <h4>Share to group</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">read_more</span>
+                                    <h4>More options</h4>
+                                </div>
+                            
+                            </div>
+                            </div>
+                        <!--comment section-->
+                        <div class="comment_section" id="commentSectionSecond">
+                            <div class="comment_section_top message_container_top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <form>
+                                    <input type="text" class="message_container_input" placeholder="Write a comment..."/>
+                                </form>
+                            </div>
+                            <div class="comment_section_container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <div class="comment-section-post">
+                                    <h4>PQR WXY</h4>
+                                    <p>Peafowl is national bird</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="post">
+                    <div class="post_top_container">
+                    <div class="post_top">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/topic-profile/profile-images/thumb/463_463/1559745133.png" class="user_img post_user"/>
+                        <div class="post_top_info">
+                            <h3>Rohit</h3>
+                            <p>14 Feb at 20:20</p>
+                        </div>
+                        </div>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                        <div class="post_bottom">
+                            <p>Wildlife video</p>
+                        </div>
+                        <div class="post_img">
+                            <video width="100%" controls>
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                        <div class="like-container">
+                            <div class="icon-container">
+                                <span style="Color:blue"class="material-icons">
+                                    thumb_up_off_alt
+                                    </span>
+                                <span style="Color:red"class="material-icons">
+                                        favorite_border
+                                        </span>
+                                <h6>3K</h6>
+                            </div>
+                            <div class="comment-number">
+                                <h6>10 Comments 12 Shares</h6>
+                            </div>
+                        </div>
+                        <div class="post_options">
+                            <div class="post_option">
+                            <span class="material-icons">thumb_up</span>
+                            <p>Like</p>
+                            </div>
+                            <div class="post_option" onclick="commentSectionSecond()">
+                            <span class="material-icons">chat_bubble_outline</span>
+                            <p>Comment</p>
+                            </div>
+                            
+                        <div class="post_option" onclick="shareSecond()">
+                            <span class="material-icons">near_me</span>
+                            <p>Share</p>
+                            </div>
+                            
+                        
+                        </div>
+                        <!--share-container-->
+                        <div class="share-second" id="shareSecond">
+                            <div class="sharecontainer">
+                                <div class="share-option">
+                                    <span class="material-icons">feed</span>
+                                    <h4>Share to news feed</h4>
+                                </div>
+                                
+                                <div class="share-option">
+                                    <span class="material-icons">add_circle_outline</span>
+                                    <h4>Share to your story</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">groups</span>
+                                    <h4>Share to group</h4>
+                                </div>
+                                <div class="share-option">
+                                    <span class="material-icons">read_more</span>
+                                    <h4>More options</h4>
+                                </div>
+                            
+                            </div>
+                            </div>
+                        <!--comment section-->
+                        <div class="comment_section" id="commentSectionSecond">
+                            <div class="comment_section_top message_container_top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <form>
+                                    <input type="text" class="message_container_input" placeholder="Write a comment..."/>
+                                </form>
+                            </div>
+                            <div class="comment_section_container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"class="user_img"/>
+                                <div class="comment-section-post">
+                                    <h4>PQR WXY</h4>
+                                    <p>Peafowl is national bird</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</div>
+    
+        
+
+
+<!--end-watch-section-->
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
